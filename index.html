@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Marcador-->
+    <div class="marcadores">
+        <div class="div-marcador" id="div-marcador-x"><span>X</span>
+            <div id="marcador-x-numero">0</div>
+        </div>
+        <div class="div-marcador" id="div-marcador-o"><span>O</span>
+            <div id="marcador-o-numero">0</div>
+        </div>
+    </div>
+    <!--turno actual-->
+    <div id="text-turno-actual"></div>
+    <!--tablero-->
+    <div class="tablero">
+        <div id="partida">
+            <!--casillas-->
+            <div class="fila">
+                <div class="casilla" id="0-1"></div>
+                <div class="casilla" id="0-2"></div>
+                <div class="casilla" id="0-3"></div>
+            </div>
+            <div class="fila">
+                <div class="casilla" id="1-1"></div>
+                <div class="casilla" id="1-2"></div>
+                <div class="casilla" id="1-3"></div>
+            </div>
+            <div class="fila">
+                <div class="casilla" id="2-1"></div>
+                <div class="casilla" id="2-2"></div>
+                <div class="casilla" id="2-3"></div>
+            </div>
+            <div id="linea-tres-victoria"></div>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </div>
+    <!--opciones-->
+    <div class="opciones">
+        <button id="reiniciar-marcador" class="opcion">Reiniciar marcador</button>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

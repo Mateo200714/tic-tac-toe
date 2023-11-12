@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.marcadores {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.marcadores .div-marcador {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 30%;
+    height: 35px;
+    min-width: 70px;
+    max-width: 250px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    background-color: rgb(255, 254, 247);
+    justify-content: space-evenly;
+}
+
+.marcadores .div-marcador div {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 5px;
+    justify-content: end;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.marcadores .div-marcador span {
+    margin-left: 5px;
+}
+.marcadores div:nth-child(2n) {
+    text-align: right;
+}
+.tablero{
+    position: relative;
+    height: auto;
+    background-color: bisque;
+}
+.tablero #partida .fila .casilla{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+.tablero #partida  {
+    display: flex;
+    flex-direction: column;
+}
+.tablero #partida .fila {
+    display: flex;
+}
